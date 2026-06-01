@@ -1,0 +1,138 @@
+/* Background */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2, #ff6a88, #ffcc70);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+/* Animated gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 980px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* Header */
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #111827;
+}
+
+.header p {
+  margin-top: 6px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+/* Upload */
+.uploadBox {
+  display: block;
+  margin-top: 18px;
+  padding: 22px;
+  border-radius: 14px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1d4ed8;
+  background: linear-gradient(135deg, #e0f2fe, #ede9fe);
+  border: 2px dashed #6366f1;
+  transition: 0.25s ease;
+}
+
+.uploadBox:hover {
+  transform: scale(1.02);
+  background: linear-gradient(135deg, #dbeafe, #fce7f3);
+}
+
+/* Loading */
+.loading {
+  margin: 14px 0;
+  color: #d97706;
+  font-weight: 600;
+}
+
+/* Layout */
+.content {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.imageBox {
+  flex: 1;
+  min-width: 280px;
+}
+
+.imageBox img {
+  width: 100%;
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Textarea */
+.textarea {
+  flex: 1;
+  min-width: 280px;
+  height: 340px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  outline: none;
+  font-size: 14px;
+  color: #111827;
+  background: #ffffff;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.textarea:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 4px rgba(139,92,246,0.2);
+}
+
+/* Button */
+.button {
+  margin-top: 18px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.uploadBox {
+  transition: all 0.2s ease;
+}
+
+.uploadBox:hover {
+  transform: translateY(-2px);
+}
